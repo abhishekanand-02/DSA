@@ -2,7 +2,7 @@
 Problem Statement: Linear Search in Array
 */
 
-// Solution:
+// Solution:GFG
 
 int search(vector<int>& arr, int x) {
 
