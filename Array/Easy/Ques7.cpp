@@ -9,7 +9,6 @@ Explanation: Distinct elements including both the arrays are: 1 2 3 4 5 6 7.
 
 */
 
-
 // Solution1: Time Compleixty : O( (m+n)log(m+n) )
 
 vector<int> findUnion(vector<int> &a, vector<int> &b) {
