@@ -39,3 +39,33 @@ int majorityElement(vector<int>& arr) {
         return -1;
         
     }
+
+//Solution3 : Moore's Voting Algorithm --> O(n)
+int majorityElement(vector<int>& arr) {
+        // code here
+        int count = 0;
+        int element;
+        
+        for(int i=0;i<arr.size();i++){
+            if(count == 0){
+                count = 1;
+                element = arr[i];
+            }
+            else if(arr[i] == element){
+                count++;
+            }
+            else{
+                count--;
+            }
+        }
+        int count1=0;
+        for(int i =0;i<arr.size();i++){
+            if(arr[i] == element){
+                count1++;
+            }
+        }
+        if(count1 > (arr.size() / 2)){
+            return element;
+        }
+        return -1;
+    }
